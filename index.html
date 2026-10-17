@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>laptop-backup</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; color: #1d1d1f; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #161616; } a { color: #8ab4f8; } }
+  h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+  .sub { color: #777; margin-top: 0; }
+</style>
+</head>
+<body>
+<h1>laptop-backup</h1>
+<p class="sub">A personal backup tool for one laptop.</p>
+
+<p>laptop-backup copies encrypted backup snapshots of its owner's laptop to that owner's own Google Drive, so a copy
+survives if the laptop is lost, stolen or broken. It is used by its owner only and is not offered to anyone else.</p>
+
+<h2>What it does with Google Drive</h2>
+<ul>
+  <li>It signs in with the <code>drive.file</code> permission: it can see and change only the files it created itself,
+      and nothing else in the Drive.</li>
+  <li>Everything it uploads is encrypted on the laptop before it leaves. Google stores only ciphertext.</li>
+  <li>It never reads, shares or sells any other data.</li>
+</ul>
+
+<p><a href="privacy.html">Privacy policy</a></p>
+</body>
+</html>
